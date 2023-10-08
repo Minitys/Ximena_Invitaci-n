@@ -1,0 +1,137 @@
+body {
+min-height: 30vh;
+display: flex;
+align-items: left;
+justify-content: left;
+position: relative;
+z-index: 99;
+}
+
+/*formulario*/
+form {
+    background-color: #113ac277;
+    padding: 40px 45px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    background: rgba(255, 255, 255, 0.075);
+    border-left: 1px solid rgba(210, 225, 255, 0.5);
+    border-top: 1px solid rgba(210, 225, 255, 0.5);
+    border-radius: 20px;
+    text-align: center;
+    width: 440px;
+    color: #fff;
+    position: relative;
+    z-index: 99;
+    display: inline-block;
+}
+
+ .input-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+ }
+
+ label{
+    color: #d6d1ff;
+    font-size: 15px;
+    font-weight: 600px;
+    margin-bottom: 15px;
+ }
+
+ label.radio {
+	cursor: pointer;
+  text-indent: 35px;
+  overflow: visible;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+label.radio:before {
+  background: #6e85cf;
+  content:'';
+  position: absolute;
+  top:2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+label.radio:after {
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 0.5em;
+	height: 0.25em;
+	background: transparent;
+	top: 7.5px;
+	left: 4.5px;
+	border: 3px solid #ffffff;
+	border-top: none;
+	border-right: none;
+
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+input[type=radio]:checked + label:after {
+	opacity: 1;
+}
+
+a.button:hover {
+    top: 3px;
+    background-color:#5b7cdf;
+    -webkit-box-shadow: none; 
+    -moz-box-shadow: none; 
+    box-shadow: none;
+    
+  }
+  
+
+  input[type=radio] {
+    visibility: hidden;
+  }
+  
+
+ input, textarea {
+    padding: 17px 15px;
+    border-radius: 25px;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    border: 2px solid;
+    color:#000000;
+    outline: none;
+ }
+
+ input::placeholder,textarea::placeholder{
+    color: #090247;
+ }
+ 
+ .form-txt{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+ }
+
+ .form-txt a{
+    color: aqua;
+    font-size: 16px;
+    font-weight: 200;
+    text-decoration: none;
+ }
+
+ 
+ .bnt1{
+    font-size: 16px;
+    color: #09133d;
+    border: 0;
+    border-radius: 25px;
+    background-color: #001547;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    text-decoration: none;
+ }
